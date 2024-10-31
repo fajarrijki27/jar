@@ -1,0 +1,119 @@
+/* Reset dan Font */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Wrapper agar halaman memenuhi satu layar */
+.full-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header dan Footer */
+/* Mengatur Header dan Logo */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Mengatur Flexbox untuk Logo dan Nav */
+.logo-nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling untuk Logo */
+.logo {
+    width: 50px;          /* Atur ukuran gambar logo */
+    height: 50px;         /* Ukuran gambar logo */
+    border-radius: 50%;   /* Membuat gambar menjadi bulat */
+    margin-left: 20px;   /* Spasi antara logo dan menu */
+}
+
+nav {
+    text-align: right;
+    padding-top: 15px;
+}
+
+/* Styling untuk Nav Links */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #0099ff;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 1;
+    a{
+        color: white;
+    }
+}
+
+/* Section Tengah */
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .cta-button {
+        display: block;
+        margin-top: 10px;
+    }
+    .hamburger {
+        display: flex;
+    }
+}

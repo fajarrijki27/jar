@@ -1,0 +1,318 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Untuk menyembunyikan scrollbar namun tetap memungkinkan scroll */
+body::-webkit-scrollbar {
+    width: 0; /* Menyembunyikan scrollbar */
+    background: transparent; /* Membuat latar belakang transparan */
+}
+
+
+/* Wrapper agar halaman memenuhi satu layar */
+.full-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    padding: 20px 0;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;          /* Atur ukuran gambar logo */
+    height: 50px;         /* Ukuran gambar logo */
+    border-radius: 50%;   /* Membuat gambar menjadi bulat */
+    margin-right: 20px;   /* Spasi antara logo dan menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #1a2a6c;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+.cta {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #0abaeb;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #1f35b7;
+}
+.courses-section{
+    background-color: white;
+    padding: 30px;
+    flex: 1;
+}
+
+.courses-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.courses-text{
+    flex: 1;
+    padding-right: 50px;
+}
+
+.courses-text h1 {
+    color: #052351;
+    margin-bottom: 20px;
+}
+
+.courses-text p {
+    color: #130202;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.courses-image {
+    flex: 1;
+    text-align: center;
+}
+
+.courses-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 150px;
+    height: auto;
+}
+section {
+    background-color: #f4f4f4;
+}
+.penjelasan-courses {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+    p{
+    color: #130202;
+    font-size: 16px;
+ }
+}
+.container p {
+    margin-bottom: 10px;
+}
+.container h1 {
+   color: #052351;
+}
+.container h2 {
+   color: #052351;
+}
+.container h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container h4 {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.image-penjelasan img{
+    width: 1000px;
+    padding-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 10px;
+}
+pre {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+    margin: 0;
+    line-height: 0.5; /* Atur jarak antar baris */
+}
+pre p{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.bold{
+    font-weight: bold;
+}
+.highlight {
+    color: #9b2093;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0abaeb;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .cta {
+        padding: 8px 20px;
+        font-size: 16px;
+        order: -1;
+    }
+
+    .courses-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .courses-text {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .courses-text h1{
+        order: -3;
+    }
+    .courses-img{
+        order: -2;
+    }
+    .courses-image img {
+        width: 80px;
+        height: auto;
+    }
+
+    .penjelasan-courses {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .penjelasan-courses p {
+        padding: 0 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+    .container h1  {
+        font-size: 18px;
+    }
+    .container h2 {
+        font-size: 16px;
+    }
+    .container h3 {
+        font-size: 14px;
+    }
+    pre{
+        text-align: left;
+        line-height: 1.2;
+        font-size: 12px;
+    }
+}

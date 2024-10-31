@@ -1,0 +1,221 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Untuk menyembunyikan scrollbar namun tetap memungkinkan scroll */
+body::-webkit-scrollbar {
+    width: 0; /* Menyembunyikan scrollbar */
+    background: transparent; /* Membuat latar belakang transparan */
+}
+
+
+/* Wrapper agar halaman memenuhi satu layar */
+.full-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    padding: 20px 0;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;          /* Atur ukuran gambar logo */
+    height: 50px;         /* Ukuran gambar logo */
+    border-radius: 50%;   /* Membuat gambar menjadi bulat */
+    margin-right: 20px;   /* Spasi antara logo dan menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #1a2a6c;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+        .container-guru {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .container-siswa {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding-bottom: 30px;
+        }
+        .student-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .student-photo {
+            flex: 1;
+            max-width: 80px;
+            margin-right: 15px;
+        }
+        .student-photo img {
+            width: 90px;
+            height: 110px;
+            object-fit: cover;
+        }
+        .student-info {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 15px;
+        }
+        .student-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .student-bio {
+            color: #555;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .quote {
+            font-style: italic;
+            color: #333;
+        }
+        h1 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .container-siswa{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .container-guru{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hamburger {
+                display: flex;
+            }
+        
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #0abaeb;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 20px 0;
+            }
+        
+            nav ul.active {
+                display: flex;
+            }
+        
+            nav ul li {
+                margin: 10px 0;
+                text-align: center;
+            }
+            .student-name {
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .student-bio {
+                color: #555;
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+            /* h1 {
+                padding-top: 10px;
+                padding-bottom: 15px;
+            } */
+        }
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .container-siswa{
+                grid-template-columns: 1fr;
+            }
+            .container-guru{
+                grid-template-columns: 1fr;
+            }
+            /* h1 {
+                padding-top: 5px;
+                padding-bottom: 10px;
+            } */
+        }

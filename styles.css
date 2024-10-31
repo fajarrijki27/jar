@@ -14,6 +14,14 @@ body {
     padding: 0;
 }
 
+/* Wrapper agar halaman memenuhi satu layar */
+.full-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
 /* Container */
 .container {
     width: 90%;
@@ -24,7 +32,7 @@ body {
 
 /* Header */
 header {
-    background-color: #1a2a6c;
+    background-color: #0abaeb;
     padding: 20px 0;
     color: #fff;
     position: sticky;
@@ -43,6 +51,12 @@ header .container {
     font-size: 24px;
     font-weight: bold;
 }
+.logo img {
+    width: 40px; /* Atur ukuran gambar sesuai kebutuhan */
+    height: 40px;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    object-fit: cover; /* Menjaga gambar tetap proporsional dalam lingkaran */
+}
 
 nav ul {
     list-style: none;
@@ -60,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #007bff;
 }
 
 /* Hamburger Icon */
@@ -84,18 +98,18 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('gambar/hero-bg.jpg') no-repeat center center/cover;
+    background: url('bg.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
 }
 
 .hero h1 {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 48px;
 }
 
 .hero p {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     margin-top: 10px;
 }
@@ -104,15 +118,15 @@ nav ul li a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 30px;
-    background-color: #ffd700;
-    color: #1a2a6c;
+    background-color: #0abaeb;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
 }
 
 .cta:hover {
-    background-color: #ffb700;
+    background-color: #007bff;
 }
 .about-section {
     background-color: white;
@@ -151,98 +165,62 @@ nav ul li a:hover {
 
 .about-image img {
     max-width: 100%;
+    height: auto;
+    width: 400px;
     border-radius: 8px;
 }
-section.portfolio {
-    padding-top: 20px;
-}
-.portfolio {
-    padding: 60px 0;
+/* Services Section */
+.services {
+    padding: 4rem 0;
     background-color: #f4f4f4;
 }
 
-.portfolio h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
     text-align: center;
+    color: #1f3b4d;
 }
-.portfolio-items {
+
+.service-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-between;
+    gap: 1rem;
 }
-.portfolio-item {
-    flex: 1;
-    min-width: 20%;
-    min-height: 10%;
-    background-color: #fff;
-    padding: 10px;
+
+.service-item {
+    background-color: white;
+    padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 1rem);
+    box-sizing: border-box;
+    margin-bottom: 1rem;
 }
-
-.portfolio-item img {
-    width: 100%;
-    height: 80%;
-    border-radius: 10px;
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #48c78e;
 }
-
-.portfolio-item p {
-    text-align: center;
-    margin-top: 10px;
-}
-/* Testimonials Section */
-
-.testimonials {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.testimonials h2 {
-    font-size: 28px;
-    margin-top: -40px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.testimonial-slider {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.testimonial-item {
-    margin-top: 10px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    min-width: 100%;
-}
-
-.testimonial-item p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.testimonial-item span {
-    font-weight: bold;
-}
-section.testimonials {
-    padding-top: 20px;
+.service-item h4 {
+    margin-top: 1rem;
+    font-size: 12px;
+    a{
+        font-size: 15px;
+    }
 }
 
 /* Footer */
 footer {
-    background-color: #1a2a6c;
+    background-color: #0abaeb;;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 /* Section Styles */
 section {
-    min-height: 100vh; /* Membuat setiap section setinggi viewport */
+    padding-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +236,7 @@ section {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #1a2a6c;
+        background-color: #0abaeb;
         position: absolute;
         top: 60px;
         left: 0;
@@ -285,18 +263,11 @@ section {
     form {
         width: 90%;
     }
-    .portfolio-items {
-        flex-direction: column; /* Menyusun item secara vertikal */
-        align-items: center;
-    }
-
-    .portfolio-item {
-        min-width: 100%; /* Setiap item mengambil lebar penuh */
-        margin-bottom: 20px; /* Beri jarak antar item */
-    }
-
-    .portfolio-item img {
-        height: auto; /* Sesuaikan tinggi gambar agar proporsional */
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        width: 300px;
+        border-radius: 8px;
     }
     .about-text h2 {
         order: -2;

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail HTML</title>
+    <link rel="stylesheet" href="style-detail.css">
+</head>
+<body class="full-screen">
+    <header>
+        <div class="container">
+            <div class="logo"><img src="logo.png" alt="logo PPLG Ak.12"></div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Pembelajaran</a></li>
+                    <li><a href="siswa.html">Poto Siswa</a></li>
+                    <li><a href="">Kenangan</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="courses-section">
+        <div class="courses-content">
+            <div class="courses-text">
+                <h1>HTML</h1>
+                    <p>HTML (HyperText Markup Language), yang merupakan dasar dari semua halaman web.
+                        HTML memungkinkan kita untuk menciptakan struktur dan konten pada halaman web,
+                        seperti teks, gambar, tautan, daftar, tabel, dan formulir.Dengan memahami HTML,
+                        Anda akan mampu membangun kerangka situs web yang fungsional dan informatif.
+                    </p>
+                </div>
+            <div class="courses-image">
+                <img src="html5.png" alt="HTML">
+            </div>
+            <div class="container-course">
+                <h1>A. Mengenal Elemen dan Tag HTML</h1>
+                <h2>Apa Itu Elemen dan Tag HTML?</h2>
+                <ul>
+                    <li><span class="bold">Elemen HTML</span> adalah adalah komponen dasar dari halaman web yang terdiri dari tag pembuka,
+                        konten, dan tag penutup.<br>Elemen ini membentuk struktur dari dokumen HTML.</li>
+                    <li><span class="bold">Tag HTML</span> adalah perintah yang memberi tahu browser bagaimana menampilkan konten. Tag ditulis
+                        dalam tanda kurung sudut (&lt; &gt;) <br>
+                        dan biasanya hadir berpasangan. seperti (&lt;p&gt;) untuk memulai paragraf dan (&lt;/p&gt;) untuk mengakhirinya.</li>
+                </ul>
+    
+                <h3>Contoh :</h3>
+                <pre>
+                    <p>&lt;p&gt;Ini adalah paragraf &lt;/p&gt;</p>
+                </pre>
+                <h2>Struktur Dasar Dokumen HTML</h2>
+                <p>Dokumen HTML memiliki struktur dasar yang terdiri dari beberapa elemen kunci. Berikut adalah contoh sederhana :</p>
+                <pre>
+                    <p>&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;html&gt;</p>
+                    <p>&lt;head&gt;</p>
+                        <p>&lt;title&gt;Judul Halaman&lt;/title&gt;</p>
+                    <p>&lt;/head&gt;</p>
+                    <p>&lt;body&gt;</p>
+                        <p>&lt;h1&gt;Selamat Datang di Situs Web Saya&lt;/h1&gt;</p>
+                        <p>&lt;p&gt;Ini adalah paragraf pertama.&lt;/p&gt;</p>
+                    <p>&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p>
+                </pre>
+                <p>Mari kita uraikan elemen-elemen penting dalam struktur ini :</p>
+                <ul>
+                    <li><span class="highlight">&lt;!DOCTYPE html&gt;</span>: Deklarasi ini memberitahu browser bahwa dokumen ini menggunakan HTML5.</li>
+                    <li><span class="highlight">&lt;html&gt;</span>: Elemen root yang membungkus semua konten halaman.</li>
+                    <li><span class="highlight">&lt;head&gt;</span>: Bagian ini mengandung informasi meta seperti judul dokumen <span class="highlight">(&lt;title&gt;)</span> dan link ke file CSS.</li>
+                    <li><span class="highlight">&lt;body&gt;</span>: Bagian yang memuat konten utama yang akan ditampilkan di halaman web.</li>
+                </ul>
+                <br>
+                <h1>B. Mengelola Teks dalam HTML</h1>
+                <p>Teks adalah bagian penting dari setiap halaman web, dan HTML menyediakan berbagai tag untuk mengatur dan menata teks dengan cara yang sesuai.</p>
+                <h2>Tag-Tag Teks dalam HTML</h2>
+                <ul>
+                    <li><b>Heading Tags</b> <span class="highlight">(&lt;h1&gt; - &lt;h6&gt;) :</span>Digunakan untuk membuat judul dengan berbagai tingkat, dari <span class="highlight">(&lt;h1&gt;)</span> yang terbesar hingga <span class="highlight">(&lt;h6&gt;)</span> yang terkecil.</li>
+                    <li><b>Paragraf</b> <span class="highlight">(&lt;p&gt;) :</span>Digunakan untuk membuat blok teks atau paragraf.</li>
+                    <li><b>Garis Horizontal</b> <span class="highlight">(&lt;hr&gt;) :</span>Digunakan untuk memisahkan konten dengan garis horizontal.</li>
+                    <li><b>Line Break</b> <span class="highlight">(&lt;br&gt;) :</span>Digunakan untuk memulai baris baru tanpa memulai paragraf baru.</li>
+                    <li><b>Teks Tebal</b> <span class="highlight">(&lt;strong&gt;)</span> <b>dan Miring</b> <span class="highlight">(&lt;em&gt;) :</span>Digunakan untuk menekankan teks, di mana <span class="highlight">(&lt;strong&gt;)</span> menebalkan teks dan <span class="highlight">(&lt;em&gt;)</span> memiringkan teks.</li>
+                    <li><b>Quotation</b> <span class="highlight">(&lt;blockquote&gt;) :</span> Digunakan untuk menampilkan kutipan dalam bentuk blok.</li>
+                </ul>
+                <h3>Contoh :</h3>
+                <pre>
+                    <p>&lt;h1&gt;Judul utama&lt;/h1&gt;</p>
+                    <p>&lt;p&gt;Ini adalah sebuah &lt;strong&gt;paragraf&lt;/strong&gt; dengan teks &lt;em&gt;miring&lt;/em&gt; dan &lt;strong&gt;tebal&lt;strong&gt;.&lt;/p&gt;</p>
+                    <p>&lt;blockquote&gt;Ini adalah kutipan.&lt;/blockquote&gt;</p>
+                </pre>
+                <p>Dengan menggunakan berbagai tag ini, Anda dapat membuat halaman web yang lebih menarik dan terstruktur.</p>
+                <br>
+    
+                <h1>C. Membuat Hyperlink dan Menampilkan Gambar
+                    Membuat Hyperlink dengan Tag <span class="highlight">&lt;a&gt;</span></h1>
+                <p>Hyperlink adalah bagian esensial dari web, memungkinkan pengguna untuk beralih dari satu halaman ke halaman lainnya.</p>
+                <ul>
+                    <li><b>Tag</b><span class="highlight">&lt;a&gt; : </span> Digunakan untuk membuat tautan atau hyperlink. Atribut href digunakan untuk menentukan URL tujuan.</li>
+                </ul>
+                <h3>Contoh :</h3>
+                <pre>
+                    <p>&lt;a href="url-tujuan"&gt;Kunjungi web saya.&lt;/a&gt;</p>
+                    <p>contoh :</p> 
+                    <p>&lt;a href="https://www.example.com"&gt;Kunjungi web saya.&lt;/a&gt;</p>
+                </pre>
+                <p>Di sini, teks "Kunjungi web saya" akan menjadi tautan yang membawa pengguna ke URL yang ditentukan ketika di klik.</p>
+                <br>
+                <h1>Menampilkan Gambar dengan Tag <span class="">&lt;img&gt;</span></h1>
+                <p>Gambar dapat memperindah halaman web dan memberikan informasi visual yang penting.</p>
+                <ul>
+                    <li><b>Tag</b><span class="highlight">&lt;img&gt; : </span> Digunakan untuk menampilkan gambar. Atribut src menentukan sumber gambar, dan alt menyediakan deskripsi alternatif gambar untuk keperluan aksesibilitas.</li>
+                </ul>
+                <h3>Contoh :</h3>
+                <pre>
+                    <p>&lt;img src="gambar.jpg" alt="Deskripsi gambar" &gt;</p>
+                </pre>
+                <p>Anda juga dapat menggabungkan gambar dengan hyperlink:</p>
+                <pre>
+                    <p>&lt;a href="https://www.google.com"&gt;&lt;img src="google.jpg" alt="gambar google"&gt;&lt;/a&gt;</p>
+                </pre>
+                <p>Di sini, gambar berfungsi sebagai tautan ke Google.</p>
+                <br>
+    
+                <h1>D. Membuat Daftar dengan HTML Jenis-Jenis Daftar</h1>
+                <p>HTML memungkinkan Anda untuk membuat daftar terstruktur dengan dua tipe utama : </p>
+                <ul>
+                    <li><b>Ordered List</b><span class="highlight">(&lt;ol&gt;) : </span>Daftar berurutan, biasanya ditampilkan dengan angka.</li>
+                    <li><b>Unordered List</b><span class="highlight">(&lt;ul&gt;) : </span>Daftar tidak berurutan, biasanya ditampilkan dengan bullet points.</li>
+                    <li><b>List Item</b><span class="highlight">(&lt;li&gt;) : </span>Setiap item dalam daftar, baik di dalam <span class="highlight">(&lt;ol&gt;)</span> maupun <span class="highlight">(&lt;ul&gt;).</li>
+                </ul>
+                <h3>Contoh :</h3>
+                <pre>
+                    <p>&lt;ol&gt;</p>
+                        <p>&lt;li&gt;Item pertama&lt;li&gt;</p>
+                        <p>&lt;li&gt;Item Kedua&lt;li&gt;</p>
+                    <p>&lt;/ol&gt;</p>
+                    <p>&lt;ul&gt;</p>
+                        <p>&lt;li&gt;Item pertama&lt;li&gt;</p>
+                        <p>&lt;li&gt;Item Kedua&lt;li&gt;</p>
+                    <p>&lt;/ul&gt;</p>
+                </pre>
+    
+                <h1>E. Membuat Tabel dengan HTML</h1>
+                <p>Tabel adalah cara yang efektif untuk menyajikan data dalam format yang terstruktur.</p><br>
+                <h2>Struktur Tabel dalam HTML</h2>
+                <ul>
+                    <li>Tag <span class="highlight">&lt;table&gt;</span> : Digunakan untukmembungkus dalam pembuatan tabel.</li>
+                    <li>Tag <span class="highlight">&lt;tr&gt;</span> (Table Row): Digunakan untuk membuat baris dalam tabel.</li>
+                    <li>Tag <span class="highlight">&lt;th&gt;</span> (Table Header): Digunakan untuk membuat sel header tabel.</li>
+                    <li>Tag <span class="highlight">&lt;td&gt;</span> (Table Data): Digunakan untuk membuat sel data tabel.</li>
+                </ul>
+                <h3>Contoh :</h3>
+                <pre>
+                    <p>&lt;table border="1"&gt;</p>
+                    <p>&lt;tr&gt;</p>
+                        <p>&lt;th&gt;Nama&lt;/th&gt;</p>
+                        <p>&lt;th&gt;Umur&lt;/th&gt;</p>
+                    <p>&lt;/tr&gt;</p>
+                    <p>&lt;tr&gt;</p>
+                        <p>&lt;td&gt;Alice&lt;/td&gt;</p>
+                        <p>&lt;td&gt;20&lt;/td&gt;</p>
+                    <p>&lt;/tr&gt;</p>
+                    <p>&lt;tr&gt;</p>
+                        <p>&lt;td&gt;Bob&lt;/td&gt;</p>
+                        <p>&lt;td&gt;24&lt;/td&gt;</p>
+                    <p>&lt;/tr&gt;</p>
+                    <p>&lt;/table&gt;</p>
+                </pre>
+                <p>Tabel di atas akan menampilkan dua kolom (Nama dan Umur) dengan data untuk masing-masing kolom.</p>
+                <br>
+                <h1>F. Membuat Formulir dengan HTML</h1>
+                <p>Formulir adalah elemen penting dalam web, memungkinkan pengguna untuk memasukkan dan mengirimkan data. HTML menyediakan berbagai elemen untuk membuat formulir yang interaktif dan fungsional.</p><br>
+                <h2>Struktur Formulir dalam HTML</h2>
+                <ul>
+                    <li><b>Tag</b> <span class="highlight">&lt;form&gt;</span> : Elemen utama untuk membuat formulir. Atribut <span class="highlight">action</span> menentukan URL tujuan data akan dikirim, sedangkan <span class="highlight">method</span> menentukan metode pengiriman (<span class="highlight">GET</span> atau <span class="highlight">POST</span>).</li>
+                </ul><br>
+                <h2>Elemen Formulir yang Umum Digunakan :</h2>
+                <ol>
+                    <li><b>Input Field</b> (<span class="highlight">&lt;input&gt;</span>) :
+                    <br>
+                    <ul>
+                        <li><b>Teks</b> : Digunakan untuk memasukkan teks biasa.</li>
+                        <pre>
+                            <p>&lt;input type="text" name="nama"&gt;</p>
+                        </pre>
+                        <li><b>Email</b> : Digunakan untuk memasukkan alamat email.</li>
+                        <pre>
+                            <p>&lt;input type="email" name="email"&gt;</p>
+                        </pre>
+                        <li><b>Password</b> : Digunakan untuk memasukkan kata sandi.</li>
+                        <pre>
+                            <p>&lt;input type="password" name="password"&gt;</p>
+                        </pre>
+                        <li><b>Radio Button</b> : Pilihan tunggal dari beberapa opsi.</li>
+                        <pre>
+                            <p>&lt;input type="radio" name="gender" value="male"&gt; Male</p>
+                            <p>&lt;input  type="radio" name="gender" value="female"&gt; Female</p>
+                        </pre>
+                        <li><b>Checkbox</b> : Pilihan ganda.</li>
+                        <pre>
+                            <p>&lt;input type="checkbox" name="agreement"&gt; I agree</p>
+                        </pre>
+                    </ul>
+                    </li>
+                    <li><b>Textarea</b> (<span class="highlight">&lt;textarea&gt;</span>)
+                    <br>
+                    <ul>
+                        <li>Digunakan untuk memasukkan teks dalam jumlah besar, seperti komentar atau pesan.</li>
+                        <pre>
+                            &lt;textarea name="pesan"&gt;&lt;/textarea&gt;
+                        </pre>
+                    </ul>
+                    </li>
+                    <li><b>Dropdown List</b> (<span class="highlight">&lt;select&gt;</span> dan <span class="highlight">&lt;option&gt;</span>).
+                        <br>
+                        <ul>
+                            <li>Digunakan untuk memilih salah satu dari beberapa opsi.</li>
+                            <pre>
+                                <p>&lt;select name="kota"&gt;</p>
+                                    <p>&lt;option value="jakarta"&gt;Jakarta&lt;/option&gt;</p>
+                                    <p>&lt;option value="bandung"&gt;Bandung&lt;/option&gt;</p>
+                                    <p>&lt;option value="surabaya"&gt;Surabaya&lt;/option&gt;</p>
+                                <p>&lt;/select&gt;</p>
+                            </pre>
+                        </ul>
+                    </li>
+                    <li><b>Button</b>
+                        <ul>
+                            <li><b>Submit Button (<span class="highlight">&lt;input type="submit"&gt;</span> atau <span class="highlight">&lt;button&gt;</span>)</b> : Mengirimkan data formulir.</li>
+                            <pre>
+                                <p>&lt;input type="submit" value="Kirim"&gt;</p>
+                            </pre>
+                            <li>
+                                <b>Reset Button (<span class="highlight">&lt;input type="reset"&gt;</span>)</b> : Mengembalikan semua input ke keadaan awal.
+                                <pre>
+                                    <p>&lt;input type="reset" value="reset"&gt;</p>
+                                </pre>
+                            </li>
+                        </ul> 
+                    </li>
+                </ol>
+                <h3>Contoh formulir lengkap :</h3>
+                <pre>
+                    <p>&lt;form action="/submit" method="post"&gt;</p>
+                        <p>&lt;label for="nama"&gt;Nama:&lt;/label&gt;</p>
+                        <p>&lt;input type="text" id="nama" name="nama"&gt;&lt;br&gt;&lt;br&gt;</p>
+                    
+                        <p>&lt;label for="email"&gt;Email:&lt;/label&gt;</p>
+                        <p>&lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;</p>
+                    
+                        <p>&lt;label for="gender"&gt;Jenis Kelamin:&lt;/label&gt;</p>
+                        <p>&lt;input type="radio" id="male" name="gender" value="male"&gt;</p>
+                        <p>&lt;label for="male"&gt;Laki-laki&lt;/label&gt;</p>
+                        <p>&lt;input type="radio" id="female" name="gender" value="female"&gt;</p>
+                        <p>&lt;label for="female"&gt;Perempuan&lt;/label&gt;&lt;br&gt;&lt;br&gt;</p>
+                    
+                        <p>&lt;label for="pesan"&gt;Pesan:&lt;/label&gt;&lt;br&gt;</p>
+                        <p>&lt;textarea id="pesan" name="pesan"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;</p>
+                    
+                        <p>&lt;input type="submit" value="Kirim"&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                </pre>
+                <h4>Semua contoh dari tag diatas dapat kalian coba, untuk mengetahui Bagaimana suatu tag dapat mempengaruhi pembuatan website anda!! 🚀<br> 
+                    Coding mudah bukan, bukan
+                </h4>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
